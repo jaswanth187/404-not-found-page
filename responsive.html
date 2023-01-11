@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 3em;
+        margin-top: 3em;
+      }
+      .heading {
+        font-family: monospace;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        color: #333333;
+        letter-spacing: -0.035em;
+      }
+      .image img {
+        height: 60vh;
+      }
+      .content {
+        padding-left: 5em;
+        margin-bottom: 6em;
+        margin-left: 3em;
+      }
+      .content p {
+        font-family: monospace;
+        width: 50%;
+        margin-bottom: 2em;
+        font-size: 1.4em;
+      }
+      .content h2 {
+        width: 80%;
+      }
+      .btn {
+        background-color: black;
+        color: white;
+        padding: 16px;
+        font-family: monospace;
+        cursor: pointer;
+      }
+      .bottom {
+        color: #bdbdbd;
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        font-size: 1em;
+        left: 50%;
+        transform: translate(-36%, -50%);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .image img {
+          width: 100%;
+          height: auto;
+        }
+        .content {
+          padding-left: 0;
+          margin-left: 0;
+          text-align: left;
+
+          box-sizing: border-box;
+        }
+        .content p {
+          width: 100%;
+          margin-bottom: 2em;
+          font-size: 1.2em;
+          text-align: left;
+        }
+        .content h2 {
+          width: 100%;
+          text-align: left;
+        }
+        .bottom {
+          width: 100%;
+          left: 0;
+          transform: translate(0%, -50%);
+          text-align: center;
+        }
+        .btn {
+          text-align: left;
+        }
+        .bottom {
+          color: #bdbdbd;
+          width: -1px;
+          position: relative;
+          bottom: 0;
+          font-size: 1em;
+          left: 36%;
+          transform: translate(-36%, -50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="image">
+        <img src="Scarecrow.png" alt="" />
+      </div>
+      <div class="content">
+        <h2 class="heading">I have bad news for you</h2>
+        <p class="matter">
+          The page that you are looking for might be removed or is temporarily
+          unavailable.
+        </p>
+        <button class="btn">BACK TO HOME</button>
+      </div>
+    </section>
+    <p class="bottom">create by the <b>Jaswanth</b> -devChallenges.io</p>
+  </body>
+</html>
